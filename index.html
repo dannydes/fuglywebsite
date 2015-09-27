@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf8">
+		<title>My Fugly WebSite</title>
+	</head>
+	<body>
+		<p>This is my fugly website that is fucking ugly.</p>
+		<p>Do you like ma website?</p>
+		<input id="yes" type="radio" value="1" name="like">
+		<label for="yes">yes</label>
+		<input id="no" type="radio" value="0" name="like">
+		<label for="no">no</label>
+		<p id="response"></p>
+		<img id="picture" src="https://c2.staticflickr.com/8/7026/6754593415_6dbae26ee2.jpg" alt="cutiee kitten ^^">
+		<script>
+		var initTitle = document.title;
+		setInterval(function () {
+			document.title = (document.title === initTitle ? 'Yolo' : initTitle);
+		}, 200);
+		</script>
+		<script>
+		var response = document.getElementById('response');
+		
+		document.getElementById('yes').addEventListener('click', function () {
+			response.textContent = 'wwiiiiii';
+		});
+		
+		document.getElementById('no').addEventListener('click', function () {
+			response.textContent = 'ffffuuuuuuuuuuu';
+		});
+		</script>
+		<script>
+		setTimeout(function () {
+			document.getElementById('picture').src = 'http://scaredyet.net/wp-content/uploads/2014/09/tumblr_mbn2zc6ZEC1rvnc2zo1_500.gif';
+		}, 2000);
+		</script>
+	</body>
+</html>
